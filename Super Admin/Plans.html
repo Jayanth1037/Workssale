@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.radixtouch.in/templates/admin/Worksbot/source/light/pages/tables/advance-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 12:25:47 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Plans</title>
+
+    <!-- Favicon---->
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <!-- Plugins Core Css -->
+    <link href="../assets/css/app.min.css" rel="stylesheet">
+    <!-- Custom Css -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <!-- You can choose a theme from css/styles instead of get all themes -->
+    <link href="../assets/css/styles/all-themes.css" rel="stylesheet" />
+    <!---Font Awesome Icons----->
+    <script src="https://kit.fontawesome.com/15660ff6ca.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="light">
+
+    <!------Top Navbar----->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" onClick="return false;" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="#" onClick="return false;" class="bars"></a>
+                <a class="navbar-brand">
+                    <span class="logo-name">Worksbot</span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="#" onClick="return false;" class="sidemenu-collapse">
+                            <i class="nav-hdr-btn ti-align-left"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Full Screen Button -->
+                    <li class="fullscreen">
+                        <a href="javascript:;" class="fullscreen-btn">
+                            <i class="nav-hdr-btn ti-fullscreen"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <div>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-home text-info"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../Super Admin/Owners.html">
+                            <i class="fas fa-users text-primary"></i>
+                            <span>Owners</span>
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="../Super Admin/Plans.html">
+                            <i class="fas fa-dollar-sign text-primary"></i>
+                            <span>Plans</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../Super Admin/Coupons.html">
+                            <i class="fas fa-gift text-danger"></i>
+                            <span>Coupons</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../Super Admin/Orders.html">
+                            <i class="fas fa-calendar-check text-success"></i>
+                            <span>Orders</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-tools"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+
+        <!--------BreadCrumb--------->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="block-header">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <ul class="breadcrumb breadcrumb-style pull-left">
+                                <li class="breadcrumb-item">
+                                    <h4 class="page-title">Plan</h4>
+                                </li>
+                                <li class="breadcrumb-item bcrumb-1">
+                                    <a href="#">
+                                        <i class="fas fa-home"></i>Dashboard</a>
+                                </li>
+                                <li class="breadcrumb-item active">Plan</li>
+                            </ul>
+
+
+                            <!--------Create New Plan Button Modal-------->
+                            <button type="button" class="btn btn-light btn-sm text-primary m-t-15" style="float: right;"
+                                data-toggle="modal" data-target="#exampleModalCenter">Add Plan
+                            </button>
+
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">Create New Plan
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <label for="fname">Name</label>
+                                                        <input type="text" class="form-control" id="fname"
+                                                            placeholder="Enter Plan Name" name="name">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="cost">Price</label>
+                                                        <input type="number" class="form-control" id="cost"
+                                                            placeholder="Enter Plan Price" name="price">
+                                                    </div>
+                                                </div>
+
+
+                                                <br>
+
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <label for="timeline">Duration</label>
+                                                        <input type="text" class="form-control" id="timeline"
+                                                            placeholder="Unlimited" name="duration">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="maxuser">Maximum Users</label>
+                                                        <input type="number" class="form-control" id="maxuser"
+                                                            name="maxusers">
+                                                        <p>Note:"-1" for Unlimited</p>
+                                                    </div>
+                                                </div>
+
+                                                <br>
+
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <label for="maxcustom">Maximum Customers</label>
+                                                        <input type="number" class="form-control" id="maxcustom"
+                                                            name="maxcustomers">
+                                                        <p>Note:"-1" for Unlimited</p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="maxvendor">Maximum Vendors</label>
+                                                        <input type="number" class="form-control" id="maxvendor"
+                                                            name="maxvendors">
+                                                        <p>Note:"-1" for Unlimited</p>
+                                                    </div>
+                                                </div>
+
+                                                <br>
+
+                                                <div class="custom-file">
+                                                    <label class="custom-file-label" for="filename">Upload</label>
+                                                    <input type="file" name="resume" class="custom-file-input"
+                                                        id="filename">
+                                                    <p>Please upload a valid image file.Size of the image should not be
+                                                        more than 2MB.</p>
+                                                </div>
+
+                                                <br>
+
+                                                <label for="des">Description</label>
+                                                <textarea type="text" class="form-control" id="des" width="100%"
+                                                    height="100%"></textarea>
+
+                                            </form>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-light waves-effect"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="button" style="background-color: #5F74E7;"
+                                                class="btn waves-effect">Create</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!------Cards-------->
+                <div class="row clearfix">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="header bg-blue text-center">
+                                <h2>
+                                    FREE PLAN
+                                </h2>
+                            </div>
+                            <div class="body">
+                                <img src="../assets/images/Cards/Free.jpg" width="250px" height="200px">
+                                <h3 class="text-center text-dark m-t-15"><small>$</small>0</h3><br>
+                                <button class="btn btn-outline-success btn-center m-l-100"><i
+                                        class="fas fa-edit"></i></button><br><br>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </div>
+                            <div class="card-footer">
+                                <div class="row">
+                                    <div class="col">
+                                        <i class="fas fa-user text-primary"></i><br>
+                                        <h4>5</h4>Users
+                                    </div>
+                                    <div class="col">
+                                        <i class="fas fa-users text-primary"></i>
+                                        <h4>5</h4>Customers
+                                    </div>
+                                    <div class="col">
+                                        <i class="fas fa-users text-primary"></i>
+                                        <h4>5</h4>Vendors
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="header bg-blue text-center">
+                                <h2>
+                                    PLATINUM
+                                </h2>
+                            </div>
+                            <div class="body">
+                                <img src="../assets/images/Cards/Platinum.jpg" width="250px" height="200px">
+                                <h3 class="text-center text-dark m-t-15"><small>$</small>5,000</h3><br>
+                                <button class="btn btn-outline-success btn-center m-l-100"><i
+                                        class="fas fa-edit"></i></button><br><br>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </div>
+                            <div class="card-footer">
+                                <div class="row">
+                                    <div class="col">
+                                        <i class="fas fa-user text-primary"></i><br>
+                                        <h4>5</h4>Users
+                                    </div>
+                                    <div class="col">
+                                        <i class="fas fa-users text-primary"></i>
+                                        <h4>5</h4>Customers
+                                    </div>
+                                    <div class="col">
+                                        <i class="fas fa-users text-primary"></i>
+                                        <h4>5</h4>Vendors
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="header bg-blue text-center">
+                                <h2>
+                                    GOLD
+                                </h2>
+
+                            </div>
+                            <div class="body">
+                                <img src="../assets/images/Cards/Gold.jpg" width="250px" height="200px">
+                                <h3 class="text-center text-dark m-t-15"><small>$</small>4,000</h3><br>
+                                <button class="btn btn-outline-success btn-center m-l-100"><i
+                                        class="fas fa-edit"></i></button><br><br>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </div>
+                            <div class="card-footer">
+                                <div class="row">
+                                    <div class="col">
+                                        <i class="fas fa-user text-primary"></i><br>
+                                        <h4>5</h4>Users
+                                    </div>
+                                    <div class="col">
+                                        <i class="fas fa-users text-primary"></i>
+                                        <h4>5</h4>Customers
+                                    </div>
+                                    <div class="col">
+                                        <i class="fas fa-users text-primary"></i>
+                                        <h4>5</h4>Vendors
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="card">
+                            <div class="header bg-blue text-center">
+                                <h2>
+                                    SILVER
+                                </h2>
+                            </div>
+                            <div class="body">
+                                <img src="../assets/images/Cards/Silver.jpg" width="250px" height="200px">
+                                <h3 class="text-center text-dark m-t-15"><small>$</small>3,000</h3><br>
+                                <button class="btn btn-outline-success btn-center m-l-100"><i
+                                        class="fas fa-edit"></i></button><br><br>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </div>
+                            <div class="card-footer">
+                                <div class="row">
+                                    <div class="col">
+                                        <i class="fas fa-user text-primary"></i><br>
+                                        <h4>5</h4>Users
+                                    </div>
+                                    <div class="col">
+                                        <i class="fas fa-users text-primary"></i>
+                                        <h4>5</h4>Customers
+                                    </div>
+                                    <div class="col">
+                                        <i class="fas fa-users text-primary"></i>
+                                        <h4>5</h4>Vendors
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Plugins Js -->
+        <script src="../assets/js/app.min.js"></script>
+        <script src="../assets/js/table.min.js"></script>
+        <!-- Custom Js -->
+        <script src="../assets/js/admin.js"></script>
+        <script src="../assets/js/pages/tables/jquery-datatable.js"></script>
+        <!-- Demo Js -->
+</body>
+
+
+<!-- Mirrored from www.radixtouch.in/templates/admin/Worksbot/source/light/pages/tables/advance-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 12:25:47 GMT -->
+
+</html>

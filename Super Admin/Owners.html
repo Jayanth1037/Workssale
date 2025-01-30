@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.radixtouch.in/templates/admin/Worksbot/source/light/pages/tables/advance-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 12:25:47 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Owners</title>
+    <!-- Favicon---->
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <!-- Plugins Core Css -->
+    <link href="../assets/css/app.min.css" rel="stylesheet">
+    <!-- Custom Css -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <!-- You can choose a theme from css/styles instead of get all themes -->
+    <link href="../assets/css/styles/all-themes.css" rel="stylesheet" />
+    <!---Font Awesome Icons----->
+    <script src="https://kit.fontawesome.com/15660ff6ca.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="light">
+
+    <!------Top Navbar----->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" onClick="return false;" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="#" onClick="return false;" class="bars"></a>
+                <a class="navbar-brand">
+                    <span class="logo-name">Worksbot</span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="#" onClick="return false;" class="sidemenu-collapse">
+                            <i class="nav-hdr-btn ti-align-left"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Full Screen Button -->
+                    <li class="fullscreen">
+                        <a href="javascript:;" class="fullscreen-btn">
+                            <i class="nav-hdr-btn ti-fullscreen"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <div>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-home text-info"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="../Super Admin/Owners.html">
+                            <i class="fas fa-Owners text-primary"></i>
+                            <span>Owners</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../Super Admin/Plans.html">
+                            <i class="fas fa-dollar-sign text-primary"></i>
+                            <span>Plans</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../Super Admin/Coupons.html">
+                            <i class="fas fa-gift text-danger"></i>
+                            <span>Coupons</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../Super Admin/Orders.html">
+                            <i class="fas fa-calendar-check text-success"></i>
+                            <span>Orders</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-tools"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!--------BreadCrumb--------->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="block-header">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <ul class="breadcrumb breadcrumb-style pull-left">
+                                <li class="breadcrumb-item">
+                                    <h4 class="page-title">Owners List</h4>
+                                </li>
+                                <li class="breadcrumb-item bcrumb-1">
+                                    <a href="#">
+                                        <i class="fas fa-home"></i>Dashboard</a>
+                                </li>
+                                <li class="breadcrumb-item active">Owners List</li>
+                            </ul>
+
+                            <!--------Add New Owner Button Modal-------->
+                            <button class="btn btn-light btn-sm text-primary m-t-15 pull-right" data-toggle="modal"
+                                data-target="#samplemodal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">Add
+                                Owner</button>
+
+                            <div class="modal fade" id="samplemodal">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">Add New Owner</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <label for="name">Name</label>
+                                                        <input type="text" class="form-control" id="name"
+                                                            placeholder="Enter new Owner name">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="emailid">Email</label>
+                                                        <input type="email" class="form-control" id="emailid"
+                                                            placeholder="Enter new Email Address">
+                                                    </div>
+                                                </div>
+
+                                                <br>
+
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <label for="pw">Password</label>
+                                                        <input type="password" class="form-control" id="pw"
+                                                            placeholder="Enter new Password">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="cpw">Confirm Password</label>
+                                                        <input type="password" class="form-control" id="cpw"
+                                                            placeholder="Confirm Password">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <span class="btn btn-light" data-dismiss="modal">Cancel</span>
+                                            <button class="btn btn-success" role="button">Create</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Owners List -->
+                <div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2><strong>Owners List</strong></h2>
+                            </div>
+                            <div class="body">
+                                <div class="table-responsive">
+                                    <table class="table table-borderless table-hover js-basic-example datatable">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>NAME</th>
+                                                <th>EMAIL</th>
+                                                <th>TOTAL OwnerS</th>
+                                                <th>PLAN</th>
+                                                <th>PLAN EXPIRY DATE</th>
+                                                <th>ACTION</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Names</td>
+                                                <td>super@example.com</td>
+                                                <td>0</td>
+                                                <td>Free Plan</td>
+                                                <td>Unlimited</td>
+                                                <td>
+                                                    <button class="btn" role="button"
+                                                        style="background-color: #5F74E7;">Upgrade plan
+                                                    </button>
+
+                                                    <!-----Edit Owner Button Modal------->
+                                                    <button class="btn btn-info" data-toggle="modal"
+                                                        data-target="#samplemodal1" tabindex="-1" role="dialog"
+                                                        aria-labelledby="exampleModalCenterTitle1"
+                                                        aria-hidden="true">Edit</button>
+
+                                                    <div class="modal fade" id="samplemodal1">
+                                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title"
+                                                                        id="exampleModalCenterTitle1">Edit Owner</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form>
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <label for="name">Name</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="name" placeholder="Names">
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <label for="emailid">Email</label>
+                                                                                <input type="email" class="form-control"
+                                                                                    id="emailid"
+                                                                                    placeholder="super@example.com">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <br>
+
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <label for="pw">Password</label>
+                                                                                <input type="password"
+                                                                                    class="form-control" id="pw"
+                                                                                    placeholder="Enter new Password">
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <label for="cpw">Confirm
+                                                                                    Password</label>
+                                                                                <input type="password"
+                                                                                    class="form-control" id="cpw"
+                                                                                    placeholder="Confirm Password">
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <span class="btn btn-light"
+                                                                        data-dismiss="modal">Cancel</span>
+                                                                    <button class="btn btn-success"
+                                                                        role="button">Edit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <button class="btn btn-success" role="button">Active</button>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Hugh Dunn</td>
+                                                <td>hugh.dunn@example.com</td>
+                                                <td>0</td>
+                                                <td>Free Plan</td>
+                                                <td>Unlimited</td>
+                                                <td>
+                                                    <button class="btn" style="background-color: #5F74E7;"
+                                                        role="button">Upgrade plan
+                                                    </button>
+
+                                                    <!-----Edit Owner Button Modal------->
+                                                    <button class="btn btn-info" data-toggle="modal"
+                                                        data-target="#samplemodal2" tabindex="-1" role="dialog"
+                                                        aria-labelledby="exampleModalCenterTitle2"
+                                                        aria-hidden="true">Edit</button>
+
+                                                    <div class="modal fade" id="samplemodal2">
+                                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title"
+                                                                        id="exampleModalCenterTitle2">Edit Owner</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form>
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <label for="name">Name</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="name" placeholder="Hugh Dunn">
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <label for="emailid">Email</label>
+                                                                                <input type="email" class="form-control"
+                                                                                    id="emailid"
+                                                                                    placeholder="hugh.dunn@example.com">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <br>
+
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <label for="pw">Password</label>
+                                                                                <input type="password"
+                                                                                    class="form-control" id="pw"
+                                                                                    placeholder="Enter new Password">
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <label for="cpw">Confirm
+                                                                                    Password</label>
+                                                                                <input type="password"
+                                                                                    class="form-control" id="cpw"
+                                                                                    placeholder="Confirm Password">
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <span class="btn btn-light"
+                                                                        data-dismiss="modal">Cancel</span>
+                                                                    <button class="btn btn-success"
+                                                                        role="button">Edit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <button class="btn btn-success" role="button">Active</button>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Alberto Byrd</td>
+                                                <td>alberto.byrd@example.com</td>
+                                                <td>0</td>
+                                                <td>Free Plan</td>
+                                                <td>Unlimited</td>
+                                                <td>
+                                                    <button class="btn" style="background-color: #5F74E7;"
+                                                        role="button">Upgrade plan
+                                                    </button>
+
+                                                    <!-----Edit Owner Button Modal------->
+                                                    <button class="btn btn-info" data-toggle="modal"
+                                                        data-target="#samplemodal3" tabindex="-1" role="dialog"
+                                                        aria-labelledby="exampleModalCenterTitle3"
+                                                        aria-hidden="true">Edit</button>
+
+                                                    <div class="modal fade" id="samplemodal3">
+                                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title"
+                                                                        id="exampleModalCenterTitle3">Edit Owner</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form>
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <label for="name">Name</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="name"
+                                                                                    placeholder="Alberto Byrd">
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <label for="emailid">Email</label>
+                                                                                <input type="email" class="form-control"
+                                                                                    id="emailid"
+                                                                                    placeholder="alberto.byrd@example.com">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <br>
+
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <label for="pw">Password</label>
+                                                                                <input type="password"
+                                                                                    class="form-control" id="pw"
+                                                                                    placeholder="Enter new Password">
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <label for="cpw">Confirm
+                                                                                    Password</label>
+                                                                                <input type="password"
+                                                                                    class="form-control" id="cpw"
+                                                                                    placeholder="Confirm Password">
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <span class="btn btn-light"
+                                                                        data-dismiss="modal">Cancel</span>
+                                                                    <button class="btn btn-success"
+                                                                        role="button">Edit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <button class="btn btn-success" role="button">Active</button>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Fransisco Riley</td>
+                                                <td>fransisco.riley@example.com</td>
+                                                <td>0</td>
+                                                <td>Free Plan</td>
+                                                <td>Unlimited</td>
+                                                <td>
+                                                    <button class="btn" style="background-color: #5F74E7;"
+                                                        role="button">Upgrade plan
+                                                    </button>
+
+                                                    <!-----Edit Owner Button Modal------->
+                                                    <button class="btn btn-info" data-toggle="modal"
+                                                        data-target="#samplemodal4" tabindex="-1" role="dialog"
+                                                        aria-labelledby="exampleModalCenterTitle4"
+                                                        aria-hidden="true">Edit</button>
+
+                                                    <div class="modal fade" id="samplemodal4">
+                                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title"
+                                                                        id="exampleModalCenterTitle4">Edit Owner</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form>
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <label for="name">Name</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="name"
+                                                                                    placeholder="Fransisco Riley">
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <label for="emailid">Email</label>
+                                                                                <input type="email" class="form-control"
+                                                                                    id="emailid"
+                                                                                    placeholder="fransisco.riley@example.com">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <br>
+
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <label for="pw">Password</label>
+                                                                                <input type="password"
+                                                                                    class="form-control" id="pw"
+                                                                                    placeholder="Enter new Password">
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <label for="cpw">Confirm
+                                                                                    Password</label>
+                                                                                <input type="password"
+                                                                                    class="form-control" id="cpw"
+                                                                                    placeholder="Confirm Password">
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <span class="btn btn-light"
+                                                                        data-dismiss="modal">Cancel</span>
+                                                                    <button class="btn btn-success"
+                                                                        role="button">Edit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <button class="btn btn-success" role="button">Active</button>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Tyler Grant</td>
+                                                <td>tyler.grant@example.com</td>
+                                                <td>0</td>
+                                                <td>Free Plan</td>
+                                                <td>Unlimited</td>
+                                                <td>
+                                                    <button class="btn" style="background-color: #5F74E7;"
+                                                        role="button">Upgrade plan
+                                                    </button>
+
+                                                    <!-----Edit Owner Button Modal------->
+                                                    <button class="btn btn-info" data-toggle="modal"
+                                                        data-target="#samplemodal5" tabindex="-1" role="dialog"
+                                                        aria-labelledby="exampleModalCenterTitle5"
+                                                        aria-hidden="true">Edit</button>
+
+                                                    <div class="modal fade" id="samplemodal5">
+                                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title"
+                                                                        id="exampleModalCenterTitle5">Edit Owner</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form>
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <label for="name">Name</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="name" placeholder="Tyler Grant">
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <label for="emailid">Email</label>
+                                                                                <input type="email" class="form-control"
+                                                                                    id="emailid"
+                                                                                    placeholder="tyler.grant@example.com">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <br>
+
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <label for="pw">Password</label>
+                                                                                <input type="password"
+                                                                                    class="form-control" id="pw"
+                                                                                    placeholder="Enter new Password">
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <label for="cpw">Confirm
+                                                                                    Password</label>
+                                                                                <input type="password"
+                                                                                    class="form-control" id="cpw"
+                                                                                    placeholder="Confirm Password">
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <span class="btn btn-light"
+                                                                        data-dismiss="modal">Cancel</span>
+                                                                    <button class="btn btn-success"
+                                                                        role="button">Edit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <button class="btn btn-success" role="button">Active</button>
+
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Jo Kelly</td>
+                                                <td>jo.kelly@example.com</td>
+                                                <td>0</td>
+                                                <td>Free Plan</td>
+                                                <td>Unlimited</td>
+                                                <td>
+                                                    <button class="btn" style="background-color: #5F74E7;"
+                                                        role="button">Upgrade plan
+                                                    </button>
+
+                                                    <!-----Edit Owner Button Modal------->
+                                                    <button class="btn btn-info" data-toggle="modal"
+                                                        data-target="#samplemodal6" tabindex="-1" role="dialog"
+                                                        aria-labelledby="exampleModalCenterTitle6"
+                                                        aria-hidden="true">Edit</button>
+
+                                                    <div class="modal fade" id="samplemodal6">
+                                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title"
+                                                                        id="exampleModalCenterTitle6">Edit Owner</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form>
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <label for="name">Name</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="name" placeholder="Jo Kelly">
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <label for="emailid">Email</label>
+                                                                                <input type="email" class="form-control"
+                                                                                    id="emailid"
+                                                                                    placeholder="jo.kelly@example.com">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <br>
+
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <label for="pw">Password</label>
+                                                                                <input type="password"
+                                                                                    class="form-control" id="pw"
+                                                                                    placeholder="Enter new Password">
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <label for="cpw">Confirm
+                                                                                    Password</label>
+                                                                                <input type="password"
+                                                                                    class="form-control" id="cpw"
+                                                                                    placeholder="Confirm Password">
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <span class="btn btn-light"
+                                                                        data-dismiss="modal">Cancel</span>
+                                                                    <button class="btn btn-success"
+                                                                        role="button">Edit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <button class="btn btn-success" role="button">Active</button>
+                                                    
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>7</td>
+                                                <td>Owner</td>
+                                                <td>owner@example.com</td>
+                                                <td>5</td>
+                                                <td>Silver</td>
+                                                <td>Mar 6, 2050 12:00 AM</td>
+                                                <td>
+                                                    <button class="btn" style="background-color: #5F74E7;"
+                                                        role="button">Upgrade plan
+                                                    </button>
+
+                                                    <!-----Edit Owner Button Modal------->
+                                                    <button class="btn btn-info" data-toggle="modal"
+                                                        data-target="#samplemodal7" tabindex="-1" role="dialog"
+                                                        aria-labelledby="exampleModalCenterTitle7"
+                                                        aria-hidden="true">Edit</button>
+
+                                                    <div class="modal fade" id="samplemodal7">
+                                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title"
+                                                                        id="exampleModalCenterTitle7">Edit Owner</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <form>
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <label for="name">Name</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="name" placeholder="Owner">
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <label for="emailid">Email</label>
+                                                                                <input type="email" class="form-control"
+                                                                                    id="emailid"
+                                                                                    placeholder="owner@example.com">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <br>
+
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <label for="pw">Password</label>
+                                                                                <input type="password"
+                                                                                    class="form-control" id="pw"
+                                                                                    placeholder="Enter new Password">
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <label for="cpw">Confirm
+                                                                                    Password</label>
+                                                                                <input type="password"
+                                                                                    class="form-control" id="cpw"
+                                                                                    placeholder="Confirm Password">
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <span class="btn btn-light"
+                                                                        data-dismiss="modal">Cancel</span>
+                                                                    <button class="btn btn-success"
+                                                                        role="button">Edit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <button class="btn btn-success" role="button">Active</button>
+
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Plugins Js -->
+        <script src="../assets/js/app.min.js"></script>
+        <script src="../assets/js/table.min.js"></script>
+        <!-- Custom Js -->
+        <script src="../assets/js/admin.js"></script>
+        <script src="../assets/js/pages/tables/jquery-datatable.js"></script>
+        <!-- Demo Js -->
+</body>
+
+
+<!-- Mirrored from www.radixtouch.in/templates/admin/Worksbot/source/light/pages/tables/advance-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 12:25:47 GMT -->
+
+</html>

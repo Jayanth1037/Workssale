@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.radixtouch.in/templates/admin/Worksbot/source/light/pages/tables/advance-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 12:25:47 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Tax Report</title>
+
+    <!-- Favicon---->
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+    <!-- Plugins Core Css -->
+    <link href="../../assets/css/app.min.css" rel="stylesheet">
+    <!-- Custom Css -->
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <!-- You can choose a theme from css/styles instead of get all themes -->
+    <link href="../../assets/css/styles/all-themes.css" rel="stylesheet" />
+    <!---Font Awesome Icons----->
+    <script src="https://kit.fontawesome.com/15660ff6ca.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="light">
+
+ 
+    <!------Top Navbar----->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" onClick="return false;" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="#" onClick="return false;" class="bars"></a>
+                <a class="navbar-brand">
+                    <span class="logo-name">Worksbot</span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="#" onClick="return false;" class="sidemenu-collapse">
+                            <i class="nav-hdr-btn ti-align-left"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Full Screen Button -->
+                    <li class="fullscreen">
+                        <a href="javascript:;" class="fullscreen-btn">
+                            <i class="nav-hdr-btn ti-fullscreen"></i>
+                        </a>
+                    </li>
+
+                    <!-----Profile----->
+                    <li class="dropdown user_profile">
+                        <div class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="../../assets/images/prof pic.jpg" width="40px" height="40px" alt="user">
+                        </div>
+                        <ul class="dropdown-menu pullDown">
+                            <li class="body">
+                                <ul class="user_dw_menu">
+                                    <li>
+                                        <a href="../Profile/My Profile.html">
+                                            <i class="material-icons">person</i>My Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../Profile/Change Password.html">
+                                            <i class="fas fa-key"></i>Change Password
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <i class="material-icons">power_settings_new</i>Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+        
+    <div>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+
+                    <li>
+                        <a href="../Dashboard/User Dashboard.html">
+                            <i class="fas fa-home text-info"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="fas fa-user-circle text-primary"></i>
+                            <span>Staff</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../Staff/Users List.html">Users</a>
+                            </li>
+                            <li>
+                                <a href="../Staff/Roles List.html">Roles</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../Customers/Customer List.html">
+                            <i class="fas fa-users text-primary"></i>
+                            <span>Customers</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../Vendors/Vendor List.html">
+                            <i class="fab fa-deezer text-success"></i>
+                            <span>Vendors</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="fas fa-layer-group text-danger"></i>
+                            <span>Products</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../Products/Products List.html">Products</a>
+                            </li>
+                            <li>
+                                <a href="../Products/Categories List.html">Categories</a>
+                            </li>
+                            <li>
+                                <a href="#">Brands</a>
+                            </li>
+                            <li>
+                                <a href="../Products/Tax List.html">Tax</a>
+                            </li>
+                            <li>
+                                <a href="#">Unit</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-shopping-cart text-primary"></i>
+                            <span>Purchases</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="fas fa-book text-success"></i>
+                            <span>Sales</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../Sales/Add Sales.html">Add Sale</a>
+                            </li>
+                            <li>
+                                <a href="../Sales/Sales.html">Sales</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-undo text-primary"></i>
+                            <span>Returns</span>
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="fas fa-file text-info"></i>
+                            <span>Reports</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../Reports/Stock Analysis.html">Stock Analysis</a>
+                            </li>
+                            <li>
+                                <a href="#">Category Report</a>
+                            </li>
+                            <li>
+                                <a href="#">Brand Report</a>
+                            </li>
+                            <li class="active">
+                                <a href="../Reports/Tax Report.html">Tax Report</a>
+                            </li>
+                            <li>
+                                <a href="../Reports/Expense Report.html">Expense Report</a>
+                            </li>
+                            <li>
+                                <a href="../Reports/Customer Report.html">Customer Report</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../Quotations/Quotations.html">
+                            <i class="fas fa-comments text-success"></i>
+                            <span>Quotations</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="fas fa-money-bill"></i>
+                            <span>Expenses</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../Expenses/Expenses List.html">Expense List</a>
+                            </li>
+                            <li>
+                                <a href="../Expenses/Expense Category.html">Expense Category</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-calendar-alt text-primary"></i>
+                            <span>Calendars</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-bell text-success"></i>
+                            <span>Notifications</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </aside>
+    </div>
+
+
+
+
+
+    <!--------Breadcrumb-------->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <button type="button" class="btn text-white l-bg-purple waves-effect m-l-10 m-t-20"
+                            style=" background-color: rgb(52, 89, 192);">Purchases</button>
+                        <button type="button" class="btn btn-light waves-effect m-l-10 m-t-20"
+                            style="color: rgb(52, 89, 192);">Sales</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6"></div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="info-box7 l-bg-purple order-info-box7">
+                            <div class="info-box7-block">
+                                <h3>$193,420.00</h3>
+                                <h5>PURCHASED AMOUNT</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="info-box7 l-bg-cyan order-info-box7">
+                            <div class="info-box7-block">
+                                <h3>$193,420.00</h3>
+                                <h5>PURCHASED AMOUNT</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6"></div>
+
+                </div>
+
+                <button class="btn btn-light text-primary pull-right m-t-20">
+                    Filter
+                </button>
+
+            </div>
+
+
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2><strong>Purchase Tax Report</strong></h2>
+                        </div>
+
+                        <div class="body">
+                            <div class="table-responsive">
+                                <table class="table table-borderless table-hover js-basic-example datatable">
+                                    <thead>
+                                        <th>REFERNCE NO</th>
+                                        <th>DATE</th>
+                                        <th>VENDOR</th>
+                                        <th>PRODUCT TAX</th>
+                                        <th>GRAND TOTAL</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="body">
+                                                    <span class="label background-color bg-cyan">#PUR00007</span>
+                                                </div>
+                                            </td>
+                                            <td>Feb 11,2021 8:22PM</td>
+                                            <td>Walk-in-Vendor</td>
+                                            <td>$5,050.00</td>
+                                            <td>$51,050.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="body">
+                                                    <span class="label background-color bg-cyan">#PUR00007</span>
+                                                </div>
+                                            </td>
+                                            <td>Feb 11,2021 9:46PM</td>
+                                            <td>Walk-in-Vendor</td>
+                                            <td>$9,600.00</td>
+                                            <td>$89,600.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="body">
+                                                    <span class="label background-color bg-cyan">#PUR00009</span>
+                                                </div>
+                                            </td>
+                                            <td>Feb 11,2021 10:06AM</td>
+                                            <td>Walk-in-Vendor</td>
+                                            <td>$5,170.00</td>
+                                            <td>$52,770.00</td>
+                                        </tr>
+                                    <tfoot>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                        <th>$19,820.00</th>
+                                        <th>193,420.00</th>
+                                    </tfoot>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Plugins Js -->
+    <script src="../../assets/js/app.min.js"></script>
+    <script src="../../assets/js/table.min.js"></script>
+    <!-- Custom Js -->
+    <script src="../../assets/js/admin.js"></script>
+    <script src="../../assets/js/pages/tables/jquery-datatable.js"></script>
+    <!-- Demo Js -->
+</body>
+
+
+<!-- Mirrored from www.radixtouch.in/templates/admin/Worksbot/source/light/pages/tables/advance-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 12:25:47 GMT -->
+
+</html>

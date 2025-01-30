@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.radixtouch.in/templates/admin/Worksbot/source/light/pages/tables/advance-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 12:25:47 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Vendors</title>
+
+    <!-- Favicon---->
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+    <!-- Plugins Core Css -->
+    <link href="../../assets/css/app.min.css" rel="stylesheet">
+    <!-- Custom Css -->
+    <link href="../../assets/css/style.css" rel="stylesheet">
+    <!-- You can choose a theme from css/styles instead of get all themes -->
+    <link href="../../assets/css/styles/all-themes.css" rel="stylesheet" />
+    <!---Font Awesome Icons----->
+    <script src="https://kit.fontawesome.com/15660ff6ca.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="light">
+
+
+    <!------Top Navbar----->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" onClick="return false;" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="#" onClick="return false;" class="bars"></a>
+                <a class="navbar-brand">
+                    <span class="logo-name">Worksbot</span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="#" onClick="return false;" class="sidemenu-collapse">
+                            <i class="nav-hdr-btn ti-align-left"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Full Screen Button -->
+                    <li class="fullscreen">
+                        <a href="javascript:;" class="fullscreen-btn">
+                            <i class="nav-hdr-btn ti-fullscreen"></i>
+                        </a>
+                    </li>
+
+                    <!-----Profile----->
+                    <li class="dropdown user_profile">
+                        <div class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="../../assets/images/prof pic.jpg" width="40px" height="40px" alt="user">
+                        </div>
+                        <ul class="dropdown-menu pullDown">
+                            <li class="body">
+                                <ul class="user_dw_menu">
+                                    <li>
+                                        <a href="../Profile/My Profile.html">
+                                            <i class="material-icons">person</i>My Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../Profile/Change Password.html">
+                                            <i class="fas fa-key"></i>Change Password
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" onClick="return false;">
+                                            <i class="material-icons">power_settings_new</i>Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+        
+    <div>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+
+                    <li>
+                        <a href="../Dashboard/User Dashboard.html">
+                            <i class="fas fa-home text-info"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="fas fa-user-circle text-primary"></i>
+                            <span>Staff</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../Staff/Users List.html">Users</a>
+                            </li>
+                            <li>
+                                <a href="../Staff/Roles List.html">Roles</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../Customers/Customer List.html">
+                            <i class="fas fa-users text-primary"></i>
+                            <span>Customers</span>
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="../Vendors/Vendor List.html">
+                            <i class="fab fa-deezer text-success"></i>
+                            <span>Vendors</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="fas fa-layer-group text-danger"></i>
+                            <span>Products</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../Products/Products List.html">Products</a>
+                            </li>
+                            <li>
+                                <a href="../Products/Categories List.html">Categories</a>
+                            </li>
+                            <li>
+                                <a href="#">Brands</a>
+                            </li>
+                            <li>
+                                <a href="../Products/Tax List.html">Tax</a>
+                            </li>
+                            <li>
+                                <a href="#">Unit</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-shopping-cart text-primary"></i>
+                            <span>Purchases</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="fas fa-book text-success"></i>
+                            <span>Sales</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../Sales/Add Sales.html">Add Sale</a>
+                            </li>
+                            <li>
+                                <a href="../Sales/Sales.html">Sales</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-undo text-primary"></i>
+                            <span>Returns</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="fas fa-file text-info"></i>
+                            <span>Reports</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../Reports/Stock Analysis.html">Stock Analysis</a>
+                            </li>
+                            <li>
+                                <a href="#">Category Report</a>
+                            </li>
+                            <li>
+                                <a href="#">Brand Report</a>
+                            </li>
+                            <li>
+                                <a href="../Reports/Tax Report.html">Tax Report</a>
+                            </li>
+                            <li>
+                                <a href="../Reports/Expense Report.html">Expense Report</a>
+                            </li>
+                            <li>
+                                <a href="../Reports/Customer Report.html">Customer Report</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../Quotations/Quotations.html">
+                            <i class="fas fa-comments text-success"></i>
+                            <span>Quotations</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" onClick="return false;" class="menu-toggle">
+                            <i class="fas fa-money-bill"></i>
+                            <span>Expenses</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="../Expenses/Expenses List.html">Expense List</a>
+                            </li>
+                            <li>
+                                <a href="../Expenses/Expense Category.html">Expense Category</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-calendar-alt text-primary"></i>
+                            <span>Calendars</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-bell text-success"></i>
+                            <span>Notifications</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </aside>
+    </div>
+
+
+
+    <div>
+        <!--------BreadCrumb--------->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="block-header">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <ul class="breadcrumb breadcrumb-style pull-left">
+                                <li class="breadcrumb-item">
+                                    <h4 class="page-title">Vendor List</h4>
+                                </li>
+                                <li class="breadcrumb-item bcrumb-1">
+                                    <a href="../Dashboard/User Dashboard.html">
+                                        <i class="fas fa-home"></i>Dashboard</a>
+                                </li>
+                                <li class="breadcrumb-item active">Vendor List</li>
+                            </ul>
+
+                            <!--------Add New Vendor Button Modal-------->
+                            <button class="btn btn-light btn-sm text-primary pull-right m-t-15" data-toggle="modal"
+                                data-target="#samplemodal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">Add
+                                Vendor</button>
+
+                            <div class="modal fade" id="samplemodal">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">Add New Vendor</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <label for="name">Name</label>
+                                                        <input type="text" class="form-control" id="name"
+                                                            placeholder="Enter New Vendor Name" name="name">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="emailid">Email</label>
+                                                        <input type="email" class="form-control" id="emailid"
+                                                            placeholder="Enter New Email Address" name="email">
+                                                    </div>
+                                                </div>
+
+                                                <br>
+
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <label for="num">Phone Number</label>
+                                                        <input type="number" class="form-control" id="num"
+                                                            placeholder="Enter Phone Number" name="number">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="add">Address</label>
+                                                        <input type="text" class="form-control" id="add"
+                                                            placeholder="Enter Address" name="address">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <label for="cty">City</label>
+                                                        <input type="text" class="form-control" id="cty"
+                                                            placeholder="Enter City Name" name="city">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="stat">State</label>
+                                                        <input type="password" class="form-control" id="stat"
+                                                            placeholder="Enter State Name" name="state">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <label for="coun">Country</label>
+                                                        <input type="password" class="form-control" id="coun"
+                                                            placeholder="Enter Country Name" name="country">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="zip">Zipcode</label>
+                                                        <input type="number" class="form-control" id="zip"
+                                                            placeholder="Enter Zipcode Name" name="code">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <span class="btn btn-light waves-effect" data-dismiss="modal">Cancel</span>
+                                            <button class="btn btn-success waves-effect" role="button">Create</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Vendor List -->
+                <div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2><strong>Vendor List</strong></h2>
+                            </div>
+                            <div class="body">
+                                <div class="table-responsive">
+                                    <table class="table table-borderless table-hover js-basic-example datatable">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>NAME</th>
+                                                <th>EMAIL</th>
+                                                <th>DATE/TIME ADDED</th>
+                                                <th>ACTION</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Teresa Carpenter</td>
+                                                <td>teresa.carpenter@example.com</td>
+                                                <td>Mar 6,2020 11:24 AM</td>
+                                                <td>
+                                                    <!-----Edit Vendor Button Modal------->
+                                                    <button class="btn btn-info" data-toggle="modal"
+                                                        data-target="#samplemodal1" tabindex="-1" role="dialog"
+                                                        aria-labelledby="exampleModalCenterTitle1"
+                                                        aria-hidden="true">Edit
+                                                    </button>
+
+                                                    <div class="modal fade" id="samplemodal1">
+                                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title"
+                                                                        id="exampleModalCenterTitle1">Edit Vendor</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="fname">Name</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="fname"
+                                                                                placeholder="Teresa Carpenter"
+                                                                                name="name">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="emailid">Email</label>
+                                                                            <input type="password" class="form-control"
+                                                                                id="emailid"
+                                                                                placeholder="teresa.carpenter@example.com"
+                                                                                name="email">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="num">Phone number</label>
+                                                                            <input type="number" class="form-control"
+                                                                                id="num" placeholder="(854)-879-2475"
+                                                                                name="number">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="add">Address</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="add" placeholder="9573 W Dallas St"
+                                                                                name="address">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="cty">City</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="cty" placeholder="Houston"
+                                                                                name="city">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="stat">State</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="stat" placeholder="Texas"
+                                                                                name="state">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="coun">Country</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="coun" placeholder="USA"
+                                                                                name="country">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="zip">Zipcode</label>
+                                                                            <input type="number" class="form-control"
+                                                                                id="zip" placeholder="77001">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <span class="btn btn-light waves-effect"
+                                                                        data-dismiss="modal">Cancel</span>
+                                                                    <button class="btn waves-effect"
+                                                                        style="background-color: #5F74E7;"
+                                                                        role="button">Edit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn btn-danger waves-effect"
+                                                        role="button">Delete</button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Kristen Fields</td>
+                                                <td>kristen.fields@example.com</td>
+                                                <td>Mar 6,2020 11:23 AM</td>
+                                                <td>
+                                                    <!-----Edit Vendor Button Modal------->
+                                                    <button class="btn btn-info" data-toggle="modal"
+                                                        data-target="#samplemodal2" tabindex="-1" role="dialog"
+                                                        aria-labelledby="exampleModalCenterTitle2"
+                                                        aria-hidden="true">Edit
+                                                    </button>
+
+                                                    <div class="modal fade" id="samplemodal2">
+                                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title"
+                                                                        id="exampleModalCenterTitle2">Edit Vendor</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="fname">Name</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="fname" placeholder="Kristen Fields"
+                                                                                name="name">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="emailid">Email</label>
+                                                                            <input type="password" class="form-control"
+                                                                                id="emailid"
+                                                                                placeholder="kristen.fields@example.com"
+                                                                                name="email">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="num">Phone number</label>
+                                                                            <input type="number" class="form-control"
+                                                                                id="num" placeholder="(854)-879-2475"
+                                                                                name="number">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="add">Address</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="add" placeholder="9573 W Dallas St"
+                                                                                name="address">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="cty">City</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="cty" placeholder="Houston"
+                                                                                name="city">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="stat">State</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="stat" placeholder="Texas"
+                                                                                name="state">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="coun">Country</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="coun" placeholder="USA"
+                                                                                name="country">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="zip">Zipcode</label>
+                                                                            <input type="number" class="form-control"
+                                                                                id="zip" placeholder="77001">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <span class="btn btn-light waves-effect"
+                                                                        data-dismiss="modal">Cancel</span>
+                                                                    <button class="btn waves-effect"
+                                                                        style="background-color: #5F74E7;"
+                                                                        role="button">Edit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn btn-danger waves-effect" role="button">Delete
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Adam Horton</td>
+                                                <td>adam.horton@example.com</td>
+                                                <td>Mar 6,2020 11:23 AM</td>
+                                                <td>
+                                                    <!-----Edit Vendor Button Modal------->
+                                                    <button class="btn btn-info" data-toggle="modal"
+                                                        data-target="#samplemodal3" tabindex="-1" role="dialog"
+                                                        aria-labelledby="exampleModalCenterTitle3"
+                                                        aria-hidden="true">Edit
+                                                    </button>
+
+                                                    <div class="modal fade" id="samplemodal3">
+                                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title"
+                                                                        id="exampleModalCenterTitle3">Edit Vendor</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="fname">Name</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="fname" placeholder="Adam Horton"
+                                                                                name="name">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="emailid">Email</label>
+                                                                            <input type="password" class="form-control"
+                                                                                id="emailid"
+                                                                                placeholder="adam.horton@example.com"
+                                                                                name="email">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="num">Phone number</label>
+                                                                            <input type="number" class="form-control"
+                                                                                id="num" placeholder="(854)-879-2475"
+                                                                                name="number">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="add">Address</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="add" placeholder="9573 W Dallas St"
+                                                                                name="address">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="cty">City</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="cty" placeholder="Houston"
+                                                                                name="city">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="stat">State</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="stat" placeholder="Texas"
+                                                                                name="state">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="coun">Country</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="coun" placeholder="USA"
+                                                                                name="country">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="zip">Zipcode</label>
+                                                                            <input type="number" class="form-control"
+                                                                                id="zip" placeholder="77001">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <span class="btn btn-light waves-effect"
+                                                                        data-dismiss="modal">Cancel</span>
+                                                                    <button class="btn waves-effect"
+                                                                        style="background-color: #5F74E7;"
+                                                                        role="button">Edit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn waves-effect btn-danger" role="button">Delete
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Sara Cook</td>
+                                                <td>sara.cook@example.com</td>
+                                                <td>Mar 6,2020 11:21 AM</td>
+                                                <td>
+                                                    <!-----Edit Vendor Button Modal------->
+                                                    <button class="btn btn-info" data-toggle="modal"
+                                                        data-target="#samplemodal4" tabindex="-1" role="dialog"
+                                                        aria-labelledby="exampleModalCenterTitle4"
+                                                        aria-hidden="true">Edit
+                                                    </button>
+
+                                                    <div class="modal fade" id="samplemodal4">
+                                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title"
+                                                                        id="exampleModalCenterTitle4">Edit Vendor</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="fname">Name</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="fname" placeholder="Sara Cook"
+                                                                                name="name">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="emailid">Email</label>
+                                                                            <input type="password" class="form-control"
+                                                                                id="emailid"
+                                                                                placeholder="sara.cook@example.com"
+                                                                                name="email">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="num">Phone number</label>
+                                                                            <input type="number" class="form-control"
+                                                                                id="num" placeholder="(854)-879-2475"
+                                                                                name="number">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="add">Address</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="add" placeholder="9573 W Dallas St"
+                                                                                name="address">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="cty">City</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="cty" placeholder="Houston"
+                                                                                name="city">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="stat">State</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="stat" placeholder="Texas"
+                                                                                name="state">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="coun">Country</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="coun" placeholder="USA"
+                                                                                name="country">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="zip">Zipcode</label>
+                                                                            <input type="number" class="form-control"
+                                                                                id="zip" placeholder="77001">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <span class="btn btn-light waves-effect"
+                                                                        data-dismiss="modal">Cancel</span>
+                                                                    <button class="btn waves-effect"
+                                                                        style="background-color: #5F74E7;"
+                                                                        role="button">Edit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn btn-danger waves-effect" role="button">Delete
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Ethan Hart</td>
+                                                <td>ethan.hart@example.com</td>
+                                                <td>Mar 6,2020 11:20 AM</td>
+                                                <td>
+                                                    <!-----Edit Vendor Button Modal------->
+                                                    <button class="btn btn-info" data-toggle="modal"
+                                                        data-target="#samplemodal5" tabindex="-1" role="dialog"
+                                                        aria-labelledby="exampleModalCenterTitle5"
+                                                        aria-hidden="true">Edit
+                                                    </button>
+
+                                                    <div class="modal fade" id="samplemodal5">
+                                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title"
+                                                                        id="exampleModalCenterTitle5">Edit Vendor</h5>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="fname">Name</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="fname" placeholder="Ethan Hart"
+                                                                                name="name">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="emailid">Email</label>
+                                                                            <input type="password" class="form-control"
+                                                                                id="emailid"
+                                                                                placeholder="ethan.hart@example.com"
+                                                                                name="email">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="num">Phone number</label>
+                                                                            <input type="number" class="form-control"
+                                                                                id="num" placeholder="(854)-879-2475"
+                                                                                name="number">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="add">Address</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="add" placeholder="9573 W Dallas St"
+                                                                                name="address">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="cty">City</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="cty" placeholder="Houston"
+                                                                                name="city">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="stat">State</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="stat" placeholder="Texas"
+                                                                                name="state">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <label for="coun">Country</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="coun" placeholder="USA"
+                                                                                name="country">
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <label for="zip">Zipcode</label>
+                                                                            <input type="number" class="form-control"
+                                                                                id="zip" placeholder="77001">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <span class="btn btn-light waves-effect"
+                                                                        data-dismiss="modal">Cancel</span>
+                                                                    <button class="btn waves-effect"
+                                                                        style="background-color: #5F74E7;"
+                                                                        role="button">Edit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn btn-danger waves-effect" role="button">Delete
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Plugins Js -->
+        <script src="../../assets/js/app.min.js"></script>
+        <script src="../../assets/js/table.min.js"></script>
+        <!-- Custom Js -->
+        <script src="../../assets/js/admin.js"></script>
+        <script src="../../assets/js/pages/tables/jquery-datatable.js"></script>
+        <!-- Demo Js -->
+</body>
+
+
+<!-- Mirrored from www.radixtouch.in/templates/admin/Worksbot/source/light/pages/tables/advance-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Feb 2021 12:25:47 GMT -->
+
+</html>
